@@ -1,0 +1,763 @@
+@font-face {
+    font-family: "Nunito";
+    src: url("/fonts/Nunito-Regular.woff") format("woff"),
+        url("/fonts/Nunito-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    display: swap;
+}
+@font-face {
+    font-family: "Nunito";
+    src: url("/fonts/Nunito-SemiBold.woff") format("woff"),
+        url("/fonts/Nunito-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    display: swap;
+}
+@font-face {
+    font-family: "Open-Sans";
+    src: url("/fonts/Open-Sans.Bold.woff") format("woff"),
+        url("/fonts/Open-Sans.Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    display: swap;
+}
+@font-face {
+    font-family: "Open-Sans";
+    src: url("/fonts/Open-Sans-Semibold.woff") format("woff"),
+        url("/fonts/Open-Sans-Semibold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    display: swap;
+}
+
+/* ROOT */
+:root {
+    /* color */
+    // --colorPrimary: #e31e24;
+    // --colorSecondary: #585757;
+    // /* background */
+    // --backgrounPrimary: #fff; /* #1c1c1c */
+    // --backgroundSecondary: #969696;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: "Open-Sans";
+    font-weight: 600;
+}
+
+main {
+    flex-grow: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container1 {
+    width: 100%;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// ********** section workin start  **********
+
+.section-working {
+    &__working-wrapper {
+        background-image: url("/img/plane00.png");
+        background-repeat: no-repeat;
+        background-size: 512px 231px;
+        background-position: top 35px right -70px;
+        padding: 0 0 146px 0;
+        margin: 0 -40px;
+    }
+
+    &__working-wrapper-container {
+        padding: 64px 0 81px 0;
+        background-image: url("/img/sariq.img.png");
+        background-repeat: no-repeat;
+        background-size: 83px 6px;
+        background-position: top 145px right 677px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__workin-title {
+        margin: 0 auto 33px auto;
+        width: 100%;
+        max-width: 473px;
+        color: #0b2863;
+        text-align: center;
+        font-family: "Nunito";
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: center;
+    }
+    &__workin-title-span {
+        color: #fd9704;
+        font-family: "Nunito";
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__workin-text {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 317px;
+        color: #4a4a4a;
+        text-align: center;
+        font-family: "Open-Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: center;
+    }
+    &__card-container {
+        display: flex;
+        padding: 0 120px 0 120px;
+    }
+    &__card:hover {
+        background: #0b3ba7;
+        cursor: pointer;
+    transition: all ease 0.5s;
+        //    background-image: url("/img/palma.svg"), url("/img/nout.svg");
+        // background-repeat: no-repeat;
+        // background-size: 204px 157px, 184px 159px;
+        // background-position: top 10px right -37px, bottom -3px left -26px;
+
+        .section-working__card-radius {
+            display: none;
+        }
+        .section-working__card-radius2 {
+            display: block;
+        }
+        .section-working__card-radius-title2 {
+            display: block;
+        }
+        .section-working__card-title {
+            color: #fff;
+        }
+        .section-working__card-title4 {
+            color: #fff;
+        }
+        .section-working__card-text {
+            color: #fff;
+        }
+        .section-working__card-text4 {
+            color: #fff;
+        }
+        .nout {
+            position: absolute;
+            width: 100%;
+            max-width: 207px;
+            height: 157px;
+            top: 10px;
+            right: -37px;
+            display: block;
+            opacity: 0.1;
+        }
+
+        .palma {
+            width: 100%;
+            max-width: 184px;
+            height: 159px;
+            position: absolute;
+            bottom: -3px;
+            left: -26px;
+            display: block;
+            opacity: 0.1;
+        }
+    }
+    &__card2:hover {
+        background: #0b3ba7;
+ transition: all ease 0.5s;
+        cursor: pointer;
+
+        //    background-image: url("/img/palma.svg"), url("/img/nout.svg");
+        // background-repeat: no-repeat;
+        // background-size: 204px 157px, 184px 159px;
+        // background-position: top 10px right -37px, bottom -3px left -26px;
+
+        .section-working__card-radius {
+            display: none;
+        }
+        .section-working__card-radius2 {
+            display: block;
+        }
+        .section-working__card-radius-title2 {
+            display: block;
+        }
+        .section-working__card-title {
+            color: #fff;
+        }
+        .section-working__card-title4 {
+            color: #fff;
+        }
+        .section-working__card-text {
+            color: #fff;
+        }
+        .section-working__card-text4 {
+            color: #fff;
+        }
+        .nout {
+            position: absolute;
+            width: 100%;
+            max-width: 207px;
+            height: 157px;
+            top: 10px;
+            right: -37px;
+            display: block;
+            opacity: 0.1;
+        }
+
+        .palma {
+            width: 100%;
+            max-width: 184px;
+            height: 159px;
+            position: absolute;
+            bottom: -3px;
+            left: -26px;
+            display: block;
+            opacity: 0.1;
+        }
+    }
+    &__card3:hover {
+        background: #0b3ba7;
+        cursor: pointer;
+ transition: all ease 0.5s;
+        //    background-image: url("/img/palma.svg"), url("/img/nout.svg");
+        // background-repeat: no-repeat;
+        // background-size: 204px 157px, 184px 159px;
+        // background-position: top 10px right -37px, bottom -3px left -26px;
+
+        .section-working__card-radius {
+            display: none;
+        }
+        .section-working__card-radius2 {
+            display: block;
+        }
+        .section-working__card-radius-title2 {
+            display: block;
+        }
+        .section-working__card-title {
+            color: #fff;
+        }
+        .section-working__card-title4 {
+            color: #fff;
+        }
+        .section-working__card-text {
+            color: #fff;
+        }
+        .section-working__card-text4 {
+            color: #fff;
+        }
+        .nout {
+            position: absolute;
+            width: 100%;
+            max-width: 207px;
+            height: 157px;
+            top: 10px;
+            right: -37px;
+            display: block;
+            opacity: 0.1;
+        }
+
+        .palma {
+            width: 100%;
+            max-width: 184px;
+            height: 159px;
+            position: absolute;
+            bottom: -3px;
+            left: -26px;
+            display: block;
+            opacity: 0.1;
+        }
+    }
+    &__card4:hover {
+        background: #0b3ba7;
+        cursor: pointer;
+ transition: all ease 0.5s;
+        //    background-image: url("/img/palma.svg"), url("/img/nout.svg");
+        // background-repeat: no-repeat;
+        // background-size: 204px 157px, 184px 159px;
+        // background-position: top 10px right -37px, bottom -3px left -26px;
+
+        .section-working__card-radius {
+            display: none;
+        }
+        .section-working__card-radius2 {
+            display: block;
+        }
+        .section-working__card-radius-title2 {
+            display: block;
+        }
+        .section-working__card-title {
+            color: #fff;
+        }
+        .section-working__card-title4 {
+            color: #fff;
+        }
+        .section-working__card-text {
+            color: #fff;
+        }
+        .section-working__card-text4 {
+            color: #fff;
+        }
+        .nout {
+            position: absolute;
+            width: 100%;
+            max-width: 207px;
+            height: 157px;
+            top: 10px;
+            right: -37px;
+            display: block;
+            opacity: 0.1;
+        }
+
+        .palma {
+            width: 100%;
+            max-width: 184px;
+            height: 159px;
+            position: absolute;
+            bottom: -3px;
+            left: -26px;
+            display: block;
+            opacity: 0.1;
+        }
+    }
+    .nout {
+        position: absolute;
+        width: 100%;
+        max-width: 207px;
+        height: 157px;
+        top: 10px;
+        right: -37px;
+        display: none;
+    }
+
+    .palma {
+        width: 100%;
+        max-width: 184px;
+        height: 159px;
+        position: absolute;
+        bottom: -3px;
+        left: -26px;
+        display: none;
+    }
+
+    &__card {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        height: 337.192px;
+        border-radius: 20px 0px 0px 20px;
+
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    &__card2 {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        height: 337.192px;
+
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    &__card3 {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        height: 337.192px;
+
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    &__card4 {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        height: 337.192px;
+        border-radius: 0px 20px 20px 0px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    &__card-radius {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: #0b3ba7;
+        filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.44));
+        text-align: center;
+        justify-content: center;
+        margin: 29px auto 26px auto;
+    }
+
+    &__card-radius-title {
+        padding: 6px 6px;
+
+        color: #fff;
+        text-align: center;
+        font-family: "Open-Sans";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        justify-content: center;
+    }
+
+    &__card-radius2 {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: #fff;
+        filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.44));
+        text-align: center;
+        justify-content: center;
+        margin: 29px auto 26px auto;
+        display: none;
+    }
+    &__card-radius-title2 {
+        padding: 6px 6px;
+        color: #fd9704;
+        text-align: center;
+        font-family: "Open-Sans";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        justify-content: center;
+        display: none;
+    }
+
+    &__card-title {
+        color: #0b3ba7;
+        text-align: center;
+        font-family: "Open-Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto 29px auto;
+    }
+    &__card-text {
+        width: 100%;
+        max-width: 215px;
+        color: #4a4a4a;
+        text-align: center;
+        font-family: "Open-Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 167.5%;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto 38px auto;
+    }
+    &__card-title4 {
+        color: #0b3ba7;
+        text-align: center;
+        font-family: "Open-Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto 29px auto;
+        text-transform: uppercase;
+    }
+    &__card-text4 {
+        width: 100%;
+        max-width: 234px;
+        color: #4a4a4a;
+        text-align: center;
+        font-family: "Open-Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 167.5%;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto 38px auto;
+    }
+}
+
+// ********** section workin end  **********
+
+// ********** section plane start ************
+
+.section-plane {
+    background-image: url("/img/plane2-bacround-img.png");
+    background-repeat: no-repeat;
+    background-size: 1540px 522px;
+    background-position: top bottom;
+
+    &__wrapper {
+        padding: 74px 126px 0 229px;
+        display: flex;
+        background-image: url("/img/sariq.img.png"),
+            url("/img/plane2-radius.png");
+
+        background-repeat: no-repeat;
+        background-size: 57px 6px, 563px 563px;
+        background-position: top 97px left 123px, top -20px right 126px;
+    }
+
+    &__wrapper-card-title {
+        margin-bottom: 16px;
+        width: 100%;
+        max-width: 590px;
+        color: #fff;
+        font-family: "Open-Sans";
+        font-size: 41px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 155.682%;
+        text-transform: uppercase;
+
+        
+    }
+    &__wrapper-card-text {
+        width: 100%;
+        max-width: 368px;
+        color: #fff;
+        font-family: "Open-Sans";
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160.682%;
+        margin-bottom: 19px;
+    }
+    &__instagram{
+          padding: 0 43px 0 43px;
+    }
+    &__link-img {
+        padding-bottom: 97px;
+    }
+
+    &__wrapper-img {
+        padding: 40px 0px 0 0;
+    }
+    &__plane {
+        width: 100%;
+        max-width: 900px;
+        height: 300px;
+    }
+}
+// ********** section plane end ************
+
+// ***************** footer  start *********************
+
+.main-footer {
+    &__wrapper {
+        padding: 58px 99px 63px 120px;
+        margin: 0 -40px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        background-image: url("/img/blue2.png");
+        background-repeat: no-repeat;
+        background-size: 317px 3px;
+        background-position: top 10px right 45px;
+    }
+
+    &__card {
+        display: flex;
+        align-items: flex-end;
+    }
+    &__edem-img {
+        width: 100%;
+        max-width: 90.033px;
+        height: 87px;
+    }
+    &__uzcard-img {
+        width: 100%;
+        max-width: 49px;
+        height: 68px;
+        margin: 0 28px 0 30px;
+    }
+    &__payme-img {
+        width: 100%;
+        max-width: 137px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+    &__card-text {
+        margin-top: 12px;
+        color: #4a4a4a;
+        font-family: "Open-Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100.682%;
+    }
+    &__card-text2 {
+        margin: 0px;
+        padding: 0px;
+        color: #4a4a4a;
+        font-family: "Open-Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100.682%;
+    }
+
+    &__card-sertifikat {
+    }
+
+    &__card2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card2-title {
+        margin-bottom: 19px;
+        color: #0b2863;
+        font-family: "Open-Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160.682%;
+        text-transform: uppercase;
+    }
+    &__card2-link {
+        color: #4a4a4a;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160.682%;
+        margin-bottom: 9px;
+        padding: 0;
+    }
+    &__card2-link:hover{
+        color: #0b3ba7;
+    }
+    .tel-img {
+        margin-right: 21px;
+    }
+    &__card2-link-tel {
+        color: #4a4a4a;
+        font-family: "Open-Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160.682%;
+        margin-left: 39px;
+    }
+    .gmail {
+        margin-right: 21px;
+    }
+    &__card3-text {
+        width: 100%;
+        max-width: 193px;
+        color: #4a4a4a;
+        font-family: "Open-Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160.682%;
+    }
+    .location {
+        margin-right: 21px;
+        width: 100%;
+        max-width: 13px;
+        height: 19px;
+    }
+    &__card3-flex {
+        margin-top: 50px;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .telegram {
+        margin-right: 20px;
+        margin-left: 35px;
+    }
+
+    .instagram {
+        margin-right: 20px;
+    }
+}
+
+// ***************  footer end ***************
+
+@media only screen and (min-width: 1500) {
+    .section-plane {
+        width: 100%;
+        max-width: 1550px;
+        background-image: url("/img/plane2-bacround-img.png");
+        background-repeat: no-repeat;
+        background-size: 1600px auto;
+        background-position: center;
+        padding-bottom: 58px;
+        padding: 0 0 0 0;
+        margin: 0 -20px;
+    }
+}
